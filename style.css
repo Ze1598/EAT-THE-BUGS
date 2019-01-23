@@ -1,0 +1,92 @@
+/* General styles */
+/*-------------------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: 'ZCOOL KuaiLe', cursive;
+	font-weight: none;
+	font-size: 115%;
+	font-style: italic;
+	/* https://www.pexels.com/photo/black-beetle-decor-on-yellow-surface-with-green-leaves-1068536/ */
+	background-image: url("assets/images/bg-img.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Outside of the game area */
+/*-------------------------------------------------------------------------------------------------------*/
+
+.title {
+	display: flex;
+	/* Align the title horizontaly */
+	justify-content: center;
+	/* Give the text a white shadow towards the bottom right corner */
+	text-shadow: 2px 2px white;
+}
+
+.bugs-eaten-info {
+	display: flex;
+	/* Align the title horizontaly */
+	justify-content: center;
+	/* Give the text a white shadow towards the bottom right corner */
+	text-shadow: 1px 1px white;
+}
+#eaten-counter {
+	margin-left: 7px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Grid */
+/*-------------------------------------------------------------------------------------------------------*/
+
+/* Create a 6x6 grid container, centered vertically and horizontally on the page */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(6, 75px);
+	grid-template-rows: repeat(6, 75px);
+	justify-content: center;
+	align-content: center;
+	grid-row-gap: 1px;
+	grid-column-gap: 1px;
+}
+
+/* Create a flexbox for each grid item (this will be useful to handle the images justifying) */
+.grid-item {
+	/*border: 2px solid grey;*/
+	/*height: 75px;*/
+	/*width: 75px;*/
+	background-color: black;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+/* Give the grid a top border */
+.grid-item:nth-child(-n+6) {
+	border-top: 3px solid silver;
+}
+/* Give the grid a right border */
+.grid-item:nth-child(6n+6) {
+	border-right: 3px solid silver;
+}
+/* Give the grid a bottom border */
+.grid-item:nth-child(n+31) {
+	border-bottom: 3px solid silver;
+}
+/* Give the grid a left border */
+.grid-item:nth-child(6n-5) {
+	border-left: 3px solid silver;
+}
+/* Resize the images and center them vertically inside their grid items (player and bug icons) */
+.player-icon, .enemy-icon, .cross-icon {
+	width: 60%;
+	height: 60%;
+	transform: translateY(13px);
+}
+
+/*-------------------------------------------------------------------------------------------------------

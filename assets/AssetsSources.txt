@@ -1,0 +1,9 @@
+/sounds
+
+movements.wav: https://freesound.org/people/OwlStorm/sounds/404780/
+
+/images
+bg-img.jpg: https://www.pexels.com/photo/black-beetle-decor-on-yellow-surface-with-green-leaves-1068536/
+enemy-icon.png: Made by me
+player-icon.png: Made by me
+crossed-path.png: Made by me
